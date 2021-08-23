@@ -16,5 +16,11 @@ eureka:
     register-with-eureka: true
     fetchRegistry: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, refresh
+
 server:
   port: 8888
